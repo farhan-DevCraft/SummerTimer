@@ -6,3 +6,12 @@ def resource_path(relative_path: str) -> str:
 
 
 FONT = resource_path("assets/Vazir.ttf")
+
+#بر حسب درصد
+task_time = {
+    "بچه داری":20,
+    "کمک به خانواده":20,
+    "برنامه نویسی":30,
+    "سرگرمی":20,
+    "سایر":10
+}
