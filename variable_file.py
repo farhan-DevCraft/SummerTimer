@@ -6,12 +6,16 @@ def resource_path(relative_path: str) -> str:
 
 
 FONT = resource_path("assets/Vazir.ttf")
+IDLE_NAME = "سایر"  
+RESET_PASSWORD = "1399"  
+VERSION = "1.1.0"
 
-#بر حسب درصد
+FIXED_MINUTES = {
+    "سایر": 120,
+}
 task_time = {
-    "بچه داری":20,
-    "کمک به خانواده":20,
-    "برنامه نویسی":30,
-    "سرگرمی":20,
-    "سایر":10
+    "بچه داری": 40,
+    "کمک به خانواده": 15,
+    "برنامه نویسی": 30,
+    "سرگرمی": 15,
 }
