@@ -14,13 +14,13 @@ def format_duration(total_seconds: float) -> str:
 
 class TimerCard(ctk.CTkFrame):
     def __init__(self, master, name, store):
-        super().__init__(master, width=250, height=250)
+        super().__init__(master, width=200, height=200)
         self.pack_propagate(False)
         self.name = name
         self.store = store
         self.is_idle = (name == IDLE_NAME)
 
-        ctk.CTkLabel(self, text=text_to_persian(name), font=(FONT, 32)).pack(padx=25, pady=10)
+        ctk.CTkLabel(self, text=text_to_persian(name), font=(FONT, 24)).pack(padx=25, pady=10)
 
         self.timer_text = ctk.CTkLabel(self, text="", font=("Arial", 24))
         self.timer_text.pack(pady=10)
